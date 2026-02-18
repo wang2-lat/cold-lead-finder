@@ -1,0 +1,17 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.env
+*.csv
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+pip install -r requirements.txt
+python -m cold_lead_finder.main --help
+export REDDIT_CLIENT_ID="test_id"
+export REDDIT_CLIENT_SECRET="test_secret"
+export OPENAI_API_KEY="test_key"
+python -m cold_lead_finder.main search -k "test" -l 5
